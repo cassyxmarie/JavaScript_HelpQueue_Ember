@@ -5,4 +5,5 @@
     <button {{action 'delete' ticket}}>Oh, wait....nevermind..I figured it out </button>
   {{else if isClosedShowing}}
     <p>Your ticket has been closed.</p>
+    {{#link-to 'index'}}Back to the back of the Queue{{/link-to}}
 {{/if}}

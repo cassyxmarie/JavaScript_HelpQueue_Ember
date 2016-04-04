@@ -14,3 +14,24 @@ body {
   font-weight: 200;
   padding: 25px 0;
 }
+
+.help-box {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
+}
+.help-box button {
+  font-size: 1.5rem;
+  background: #478;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px 50px;
+}
+.help-box button:hover {
+  cursor: pointer;
+  background: #859;
+  border-bottom: 4px solid #637;
+  text-shadow: 2px 2px 2px #111;
+}

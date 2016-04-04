@@ -23,8 +23,10 @@ export default Ember.Component.extend({
       var params = {
         name: this.get('name'),
         location: this.get('location'),
-        description: this.get('description')
+        description: this.get('description'),
+        timestamp: Date.now()
       };
+      console.log(params);
       this.set('isFormShowing', false);
       this.set('isDeleteShowing', true);
       this.sendAction('saveTicket', params);

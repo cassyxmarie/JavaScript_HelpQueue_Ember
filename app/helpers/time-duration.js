@@ -1,11 +1,16 @@
 import Ember from 'ember';
+// import moment from 'moment';
 
 export function timeDuration(params/*, hash*/) {
-  // return params;
+  var ticket = params[0]
+  var timestamp = ticket.get('timestamp');
+  // debugger;
+  // function update() {
+  var timeSince = moment(timestamp).toNow(Date.now());
+  return timeSince;
+  //   setInterval(update, 1000);
+  // }
 
-  Ember.Handlebars.registerBoundHelper('currentDate', function() {
-  return moment().format('LL');
-});
 }
 
 export default Ember.Helper.helper(timeDuration);
