@@ -1,13 +1,11 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
+export default Ember.Component.extend({
   isQ1showing: true,
   isQ2showing: false,
   isQ3showing: false,
+  isFormShowing: false,
   isDeleteShowing: false,
-  model() {
-    return this.store.findAll('ticket');
-  },
   actions: {
     questionShow: function() {
       this.set('isQ1showing', false);
@@ -19,6 +17,10 @@ export default Ember.Route.extend({
     },
     question3Show: function() {
       this.set('isQ3showing', false);
+      this.set('isFormShowing', true);
+    },
+    question4Show: function() {
+      this.set('isFormShowing', false);
       this.set('isDeleteShowing', true);
     },
   }

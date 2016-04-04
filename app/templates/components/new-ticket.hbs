@@ -1,0 +1,33 @@
+{{#if isQ1showing}}
+    <p>have you gone through all the steps....</p>
+    <button {{action 'questionShow'}}>Yes</button>
+  {{else if isQ2showing}}
+    <p>have you asked another pair.....</p>
+    <button {{action 'question2Show'}}>Yes...</button>
+  {{else if isQ3showing}}
+    <p>have you spent 15min.....</p>
+    <button {{action 'question3Show'}}>Yes...</button>
+  {{else if isFormShowing}}
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="name">Names</label>
+          {{input value=name id="name"}}
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          {{input value=location id="location"}}
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          {{input value=description id="description"}}
+        </div>
+
+        <button class="btn btn-default" {{action 'saveTicket' 'question4Show'}}>Help!</button>
+      </form>
+    </div>
+  {{else if isDeleteShowing}}
+    <button {{action 'delete' ticket}}>Delete</button>
+{{/if}}

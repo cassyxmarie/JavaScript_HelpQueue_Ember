@@ -1,0 +1,7 @@
+<li>{{ticket.name}} , {{ticket.location}}
+  {{#if isDescriptionShowing}}
+    <p {{action 'descriptionHide'}}>{{ticket.description}}</p>
+    {{else}}
+    <button {{action 'descriptionShow'}}>Show Description</button>
+  {{/if}}
+</li>

@@ -1,2 +1,9 @@
 <h1>Teacher</h1>
 {{#link-to 'index'}}User page{{/link-to}}
+
+
+<ul>
+  {{#each model as |ticket|}}
+    {{ticket-tile ticket=ticket}}
+  {{/each}}
+</ul>
