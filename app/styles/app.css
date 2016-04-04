@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+#title {
+  background: #478;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 200;
+  padding: 25px 0;
+}

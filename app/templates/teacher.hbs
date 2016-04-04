@@ -4,6 +4,6 @@
 
 <ul>
   {{#each model as |ticket|}}
-    {{ticket-tile ticket=ticket}}
+    {{ticket-tile ticket=ticket saveTicket="saveTicket" destroyTicket="destroyTicket"}}
   {{/each}}
 </ul>

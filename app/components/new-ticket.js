@@ -19,9 +19,15 @@ export default Ember.Component.extend({
       this.set('isQ3showing', false);
       this.set('isFormShowing', true);
     },
-    question4Show: function() {
+    saveTicket() {
+      var params = {
+        name: this.get('name'),
+        location: this.get('location'),
+        description: this.get('description')
+      };
       this.set('isFormShowing', false);
       this.set('isDeleteShowing', true);
-    },
+      this.sendAction('saveTicket', params);
+    }
   }
 });

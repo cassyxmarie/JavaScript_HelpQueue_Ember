@@ -25,9 +25,8 @@
           {{input value=description id="description"}}
         </div>
 
-        <button class="btn btn-default" {{action 'saveTicket' 'question4Show'}}>Help!</button>
+        <button class="btn btn-default" {{action 'saveTicket'}}>Help!</button>
+
       </form>
     </div>
-  {{else if isDeleteShowing}}
-    <button {{action 'delete' ticket}}>Delete</button>
 {{/if}}

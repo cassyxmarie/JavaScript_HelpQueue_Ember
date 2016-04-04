@@ -1,5 +1,5 @@
 <h1>User</h1>
 {{#link-to 'teacher'}}Teacher page{{/link-to}}
 
-
-{{new-ticket ticket=ticket}}
+Today's date: {{currentDate}}
+{{new-ticket ticket=ticket saveTicket="saveTicket" destroyTicket="destroyTicket"}}

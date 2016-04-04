@@ -1,25 +1,18 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  isQ1showing: true,
-  isQ2showing: false,
-  isQ3showing: false,
-  isDeleteShowing: false,
   model() {
     return this.store.findAll('ticket');
   },
   actions: {
-    questionShow: function() {
-      this.set('isQ1showing', false);
-      this.set('isQ2showing', true);
+    saveTicket(params) {
+      var newTicket = this.store.createRecord('ticket', params);
+      newTicket.save();
+      this.transitionTo('user', newTicket.id);
     },
-    question2Show: function() {
-      this.set('isQ2showing', false);
-      this.set('isQ3showing', true);
-    },
-    question3Show: function() {
-      this.set('isQ3showing', false);
-      this.set('isDeleteShowing', true);
-    },
+    destroyTicket(ticket) {
+      ticket.destroyRecord();
+      this.transitionTo('index');
+    }
   }
 });

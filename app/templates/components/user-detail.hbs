@@ -1,0 +1,8 @@
+
+
+{{#if isDeleteShowing}}
+    <h2>Help is on the way! No need to worry. We are here to help! </h2>
+    <button {{action 'delete' ticket}}>Oh, wait....nevermind..I figured it out </button>
+  {{else if isClosedShowing}}
+    <p>Your ticket has been closed.</p>
+{{/if}}
