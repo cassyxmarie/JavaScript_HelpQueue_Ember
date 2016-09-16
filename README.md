@@ -2,7 +2,7 @@
 
 #### _This application is a recreation of the Epicodus help queue, where students request help from teachers. 04/04/2016_
 
-#### By _**Cassandra Culkins**_ _**Jeff Seymour**_ 
+#### By _**Cassandra Culkins**_ & _**Jeff Seymour**_ 
 
 ## Description
 
