@@ -1,7 +1,7 @@
 # _Help Queue_
 
 #### _This application is a recreation of the Epicodus help queue, where students request help from teachers. 04/04/2016_
-
+![alt text](http://i.imgur.com/GQRTYSl.png "Logo Title Text 1")
 #### By _**Cassandra Culkins**_ & _**Jeff Seymour**_ 
 
 ## Description
